@@ -608,6 +608,10 @@ video {
   margin: auto;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -631,6 +635,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-1\/2 {
@@ -683,6 +691,12 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -691,6 +705,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-25 {
+  --tw-bg-opacity: 0.25;
 }
 
 .bg-\[url\(\'\.\.\/img\/1\.webp\'\)\] {
@@ -735,6 +753,10 @@ video {
 
 .bg-\[url\(\'\.\.\/img\/signatur\.webp\'\)\] {
   background-image: url('../img/signatur.webp');
+}
+
+.bg-\[url\(\'\.\.\/img\/l1\.png\'\)\] {
+  background-image: url('../img/l1.png');
 }
 
 .bg-cover {
@@ -882,6 +904,10 @@ video {
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-25:hover {
+  --tw-bg-opacity: 0.25;
 }
 
 .hover\:font-bold:hover {
